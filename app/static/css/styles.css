@@ -1,0 +1,145 @@
+@font-face {
+    font-family: Nunito-Bold;
+    src: url('Nunito-Bold.ttf');
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url('OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: OpenSans-SemiBold;
+    src: url('OpenSans-SemiBold.ttf');
+}
+
+@font-face {
+      font-family: OpenSans-Bold;
+    src: url('OpenSans-Bold.ttf');
+}
+
+body {
+  font-family: OpenSans-Regular;
+  background-color: #f7f7f7;
+}
+
+.bg-70 {
+  background-color: #58595b;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #ffcf01;
+}
+
+.navbar-dark .navbar-text {
+  color: #ffffff;
+}
+
+.custom-file-label::after {
+  content: 'Elegir';
+}
+
+.btn-success {
+  color: #454648;
+  background-color: #ffcf01;
+  border-color: #ffcf01;
+}
+
+.btn-success:hover {
+  color: #454648;
+  background-color: #ffcf01;
+  border-color: #ffcf01;
+}
+
+.btn-success:disabled {
+  color: #454648;
+  background-color: #ffcf01;
+  border-color: #ffcf01;
+}
+
+.btn-outline-success {
+  color: #ffcf01;
+  border-color: #ffcf01;
+}
+
+.btn-outline-success:hover {
+  color: #454648;
+  background-color: #ffcf01;
+  border-color: #ffcf01;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled).active,
+.btn-outline-success:not(:disabled):not(.disabled):active,
+.show>.btn-outline-success.dropdown-toggle{
+  color: #454648;
+  background-color: #ffcf01;
+  border-color: #ffcf01;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #00448d;
+  border-color: #00448d;
+}
+
+.card-header {
+  background-color: #00448d;
+  color: white;
+  font-weight: bold;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+  display: none;
+}
+
+#loading_message {
+  display: none;
+}
+
+#constant_alert_date_div {
+  display: none;
+}
+
+#load_by_date_div {
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.footer {
+  position: static;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.modal-lg-custom {
+    max-width: 90%;
+}
+
+.modal-alerts {
+    background-color: white;
+    padding: 20px;
+}
+

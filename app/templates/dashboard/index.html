@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block body %}
+
+<div class="row pb-3">
+    <div class="col-12">
+        <div class="card">
+          <div class="card-header">
+            Comportamiento de cuentas en el tiempo
+          </div>
+          <div class="card-body">
+            <div class="form-group row">
+                <label for="select_account_id" class="col-sm-2 col-form-label">Seleccione la cuenta</label>
+                <select id="select_account_id" class="selectpicker" data-live-search="true" autocomplete="off">
+                    {% for account_id in account_ids_list %}
+                    <option>{{ account_id }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div id="accounts_behavior">
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div>
+  <a class="btn btn-primary btn-lg btn-block" href="/{{ g.environment }}/download_file" role="button">
+    Descargar
+  </a>
+</div>
+
+<input id="accounts_behavior_info" type="hidden" value='{{time_line_json | safe}}'>
+
+{% endblock %}
+
