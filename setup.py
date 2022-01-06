@@ -17,7 +17,7 @@ setup(
         'xlrd',
         'workalendar',
         'Flask-Mail',
-        'celery==4.2.2',
+        'celery==5.2.2',
         'redis==2.10.6',
         'gunicorn',
         'adal',
